@@ -1,4 +1,4 @@
-package com.khadri.hibernate.hql;
+package com.khadri.hibernate.hql.positional.params;
 
 import java.util.List;
 
@@ -9,7 +9,8 @@ import org.hibernate.query.Query;
 import com.khadri.hibernate.entities.Chicken;
 import com.khadri.hibernate.util.StandardRegistryUtil;
 
-public class Main {
+
+public class Main{
 
 	public static void main(String[] args) {
 		Class<?> class1 = Chicken.class;

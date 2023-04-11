@@ -9,6 +9,7 @@ import javax.persistence.Table;
 
 @Entity(name = "Chiken1")
 @Table(name = "CHICKEN")
+//write some query
 public class Chicken {
 
 	@Id
