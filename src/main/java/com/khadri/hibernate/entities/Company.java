@@ -10,8 +10,8 @@ import org.hibernate.annotations.NamedQuery;
 
 @Entity(name = "Company")
 @Table(name = "COMPANY")
-@NamedQuery(name = Company.NamedQueries.BY_NAME, query = "select c from Company c where name=:name")
-@NamedQuery(name = Company.NamedQueries.BY_LOCATION, query = "select c from Company c where location=:loc")
+@NamedQuery(name = Company.NamedQueriesConstants.BY_NAME, query = "select c from Company c where name=:name")
+@NamedQuery(name = Company.NamedQueriesConstants.BY_LOCATION, query = "select c from Company c where location=:loc")
 public class Company {
 
 	@Id
@@ -46,7 +46,7 @@ public class Company {
 		this.location = location;
 	}
 
-	public class NamedQueries {
+	public class NamedQueriesConstants {
 		public static final String BY_LOCATION = "FIND_BY_LOCATION";
 		public static final String BY_NAME = "FIND_BY_NAME";
 

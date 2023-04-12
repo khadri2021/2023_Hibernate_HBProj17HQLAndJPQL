@@ -14,7 +14,7 @@ public class Main {
 		Session session = StandardRegistryUtil.createSession(Company.class);
 
 		Query<Company> query1 = session.createNamedQuery(
-				Company.NamedQueries.BY_LOCATION, Company.class);
+				Company.NamedQueriesConstants.BY_LOCATION, Company.class);
 
 		query1.setParameter("loc", "KADIRI");
 		query1.getResultList().forEach((comp) -> {
@@ -24,7 +24,7 @@ public class Main {
 		});
 
 		Query<Company> query2 = session
-				.createNamedQuery(Company.NamedQueries.BY_NAME, Company.class);
+				.createNamedQuery(Company.NamedQueriesConstants.BY_NAME, Company.class);
 
 		query2.setParameter("name", "TCS");
 		query2.getResultList().forEach((comp) -> {
