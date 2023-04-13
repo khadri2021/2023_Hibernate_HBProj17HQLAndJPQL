@@ -21,7 +21,8 @@ update food set cost = 30 where name="poori";
 delete from food where id= 10;
 
 
-
+select * from EMPLOYEE2;
+select * from Registration; 
 
 
 
