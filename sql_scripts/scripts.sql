@@ -30,8 +30,6 @@ select * from Registration;
 
 
 
-
-
 select 
 chicken0_.C_ID as c_id1_0_, 
 chicken0_.C_COST as c_cost2_0_, 

@@ -40,7 +40,7 @@ public class Main {
 				"select e from Employee e where e.workingDays =:maxDays",
 				Employee.class);
 		maxEmployeeQuery.setParameter("maxDays", maxWorkingDays);
-		
+
 		System.out.println("==== Best Employee ====");
 		maxEmployeeQuery.getResultList().stream().findFirst()
 				.ifPresent((emp) -> {
@@ -55,7 +55,6 @@ public class Main {
 				});
 
 		// insertEmployee(session);
-
 	}
 
 	private static void insertEmployee(Session session) {
